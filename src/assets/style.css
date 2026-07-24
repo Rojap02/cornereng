@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --light: #f8f5f0;
+  --green: #00520a;
+  --purple: #660033;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  margin: 0;
+  min-height: 100%;
+  font-family: "Poppins", sans-serif;
+}
+
+.background {
+  min-height: 100vh;
+  background-color: var(--light);
+}
+
+.main-page {
+  position: relative;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  height: 100vh;
+  margin: 0 clamp(20px, 5vw, 100px);
+  overflow: hidden;
+
+  background-color: var(--green);
+}
+
+.ig-logo {
+  position: absolute;
+  top: clamp(20px, 3vw, 40px);
+  left: clamp(20px, 3vw, 40px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--purple);
+  font-size: 70px;
+  line-height: 1;
+  text-decoration: none;
+
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
+}
+
+.ig-logo:hover {
+  transform: scale(1.2);
+}
+
+.brand-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  padding-right: clamp(20px, 5vw, 90px);
+  text-align: right;
+}
+
+.brand-title {
+  margin: 0;
+
+  color: var(--light);
+  font-size: clamp(60px, 11vw, 170px);
+  font-weight: 700;
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+
+.brand-author {
+  margin-top: clamp(8px, 1vw, 15px);
+
+  color: var(--light);
+  font-size: clamp(14px, 1.3vw, 20px);
+  font-weight: 600;
+  text-transform: uppercase;
+}
