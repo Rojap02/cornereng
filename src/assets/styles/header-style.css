@@ -1,0 +1,35 @@
+:root {
+  --green: #00520a;
+  --dark_pink: #660033;
+}
+
+.header {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: clamp(1rem, 2vw, 1.5rem) clamp(1.5rem, 5vw, 5rem);
+  background-color: var(--green);
+}
+
+.instagram-link {
+  color: var(--dark_pink);
+  font-size: clamp(1vw, 2.5vw, 3vw);
+  text-decoration: none;
+}
+
+.navigation-list {
+  list-style-type: none;
+  display: flex;
+  gap: clamp(1rem, 2vw, 2rem);
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-list a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--dark_pink);
+  font-size: clamp(1vw, 1.5vw, 2vw);
+}
