@@ -1,6 +1,7 @@
 :root {
   --green: #00520a;
   --dark_pink: #660033;
+  --bright_pink: #c98da3;
 }
 
 .header {
@@ -9,27 +10,57 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: clamp(1rem, 2vw, 1.5rem) clamp(1.5rem, 5vw, 5rem);
-  background-color: var(--green);
+  padding: clamp(0.8rem, 1.5vw, 1.25rem) clamp(1.5rem, 5vw, 5rem);
+  background-color: var(--bright_pink);
+}
+
+.logo {
+  text-decoration: none;
+  color: var(--dark_pink);
+  font-size: clamp(1vw, 1.3vw, 2vw);
+  font-weight: 600;
 }
 
 .instagram-link {
+  display: flex;
+  align-items: center;
   color: var(--dark_pink);
-  font-size: clamp(1vw, 2.5vw, 3vw);
+  font-size: clamp(1.5vw, 3vw, 3.5vw);
+  line-height: 1;
   text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.instagram-link:hover {
+  opacity: 0.65;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
 }
 
 .navigation-list {
-  list-style-type: none;
   display: flex;
-  gap: clamp(1rem, 2vw, 2rem);
+  align-items: center;
+  list-style: none;
+  gap: clamp(1.5rem, 3vw, 3rem);
   margin: 0;
   padding: 0;
 }
 
-.navigation-list a {
+.navigation-link {
+  display: flex;
+  align-items: center;
   text-decoration: none;
   text-transform: uppercase;
   color: var(--dark_pink);
-  font-size: clamp(1vw, 1.5vw, 2vw);
+  font-size: clamp(1vw, 1.3vw, 2vw);
+  font-weight: 600;
+  line-height: 1;
+  transition: opacity 0.2s ease;
+}
+
+.navigation-list a:hover {
+  opacity: 0.65;
 }

@@ -4,6 +4,7 @@ import "@/assets/styles/header-style.css";
 
 <template>
   <header class="header">
+    <RouterLink class="logo" to="/">corner.eng</RouterLink>
     <a
       class="instagram-link"
       href="https://www.instagram.com/corner.eng/"
@@ -16,12 +17,32 @@ import "@/assets/styles/header-style.css";
 
     <nav class="navigation">
       <ul class="navigation-list">
-        <li><a href="#about">o mnie</a></li>
-        <li><a href="#articles">artykuły</a></li>
-        <li><a href="#free">darmowe materiały</a></li>
-        <li><a href="#shop">sklep</a></li>
-        <li><a href="#final">matura 2027</a></li>
-        <li><a href="#contact">zapisz się na zajęcia</a></li>
+        <li>
+          <RouterLink class="navigation-link" to="/o-mnie">o mnie</RouterLink>
+        </li>
+        <li>
+          <RouterLink class="navigation-link" to="/artykuly"
+            >artykuły</RouterLink
+          >
+        </li>
+        <li>
+          <RouterLink class="navigation-link" to="/darmowe-materialy"
+            >darmowe materiały</RouterLink
+          >
+        </li>
+        <li>
+          <RouterLink class="navigation-link" to="/sklep">sklep</RouterLink>
+        </li>
+        <li>
+          <RouterLink class="navigation-link" to="/matura-2027"
+            >matura 2027</RouterLink
+          >
+        </li>
+        <li>
+          <RouterLink class="navigation-link" to="/zapisz-sie"
+            >zapisz się na zajęcia</RouterLink
+          >
+        </li>
       </ul>
     </nav>
   </header>
