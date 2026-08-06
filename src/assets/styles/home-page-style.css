@@ -1,0 +1,41 @@
+:root{
+    --bright_pink: #c98da3;
+    --light: #f5e3e6;
+}
+
+
+.name-container {
+    background-color: var(--bright_pink);
+    height: clamp(25vh, 35vh, 45vh);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: right;
+    text-transform: uppercase;
+    padding-top: clamp(2rem, 5rem, 7rem);
+    padding-right: clamp(2rem, 5rem, 7rem);
+    padding-bottom: clamp(2rem, 5rem, 7rem);
+    line-height: 0.9;
+}
+
+p{
+    margin: 0;
+}
+
+.corner {font-size: clamp(2vw, 10vw, 13rem);
+    font-weight: bold;
+    color: var(--light);
+}
+
+.eng {
+    font-size: clamp(2vw, 10vw, 13vw);
+    font-weight: bold;
+    color: var(--light);    
+}
+
+.subtitle {
+    font-size: clamp(1vw, 3vw, 7vw);
+    font-weight: 400;
+    color: var(--light);
+}
