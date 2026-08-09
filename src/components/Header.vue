@@ -4,16 +4,21 @@ import "@/assets/styles/header-style.css";
 
 <template>
   <header class="header">
-    <RouterLink class="logo" to="/">corner.eng</RouterLink>
-    <a
-      class="instagram-link"
-      href="https://www.instagram.com/corner.eng/"
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="Profil Instagram corner.eng"
-    >
-      <i class="fa-brands fa-instagram"></i>
-    </a>
+    <div class="header-brand">
+      <RouterLink class="logo" to="/">
+        <span>corner</span>
+        <span>.eng</span>
+      </RouterLink>
+      <a
+        class="instagram-link"
+        href="https://www.instagram.com/corner.eng/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Profil Instagram corner.eng"
+      >
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+    </div>
 
     <nav class="navigation">
       <ul class="navigation-list">
@@ -39,8 +44,8 @@ import "@/assets/styles/header-style.css";
           >
         </li>
         <li>
-          <RouterLink class="navigation-link" to="/zapisz-sie"
-            >zapisz się na zajęcia</RouterLink
+          <RouterLink class="navigation-link" to="/oferta"
+            >oferta</RouterLink
           >
         </li>
       </ul>

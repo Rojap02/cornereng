@@ -6,7 +6,7 @@ import ArticlesPage from "@/views/ArticlesPage.vue";
 import FreeMaterialsPage from "@/views/FreeMaterialsPage.vue";
 import ShopPage from "@/views/ShopPage.vue";
 import MaturaPage from "@/views/MaturaPage.vue";
-import SignUpPage from "@/views/SignUpPage.vue";
+import OfferPage from "@/views/OfferPage.vue";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -42,9 +42,9 @@ const router = createRouter({
       component: MaturaPage,
     },
     {
-      path: "/zapisz-sie",
-      name: "signup",
-      component: SignUpPage,
+      path: "/oferta",
+      name: "offer",
+      component: OfferPage,
     },
   ],
 });

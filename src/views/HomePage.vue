@@ -24,7 +24,7 @@ import bigBenImage from "@/images/big-ben.png";
 
       <div class="whats-cornereng-text-body">
         <p>corner.eng powstało z przekonania, że nauka języka nie musi być stresująca ani oparta na bezmyślnym zapamiętywaniu.</p>
-        <p><br />więcej dowiesz się w zakładce <RouterLink to="/o-mnie" class="about-link">O MNIE</RouterLink>.</p>
+        <p><br />więcej dowiesz się w zakładce <RouterLink to="/o-mnie" class="about-link">O MNIE</RouterLink> i <RouterLink to="/oferta" class="about-link">OFERTA</RouterLink>.</p>
       </div>
     </div>
   </section>

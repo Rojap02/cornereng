@@ -19,11 +19,28 @@
   height: var(--header-height);
 }
 
+.header-brand {
+  display: flex;
+  align-items: center;
+  gap: clamp(1rem, 3vw, 2.5rem);
+}
+
 .logo {
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: fit-content;
   text-decoration: none;
   color: var(--dark_pink);
   font-size: clamp(1vw, 1.3vw, 2vw);
   font-weight: 600;
+  line-height: 1;
+  transition: opacity 0.2s ease;
+}
+
+.logo:hover {
+  opacity: 0.65;
 }
 
 .instagram-link {
