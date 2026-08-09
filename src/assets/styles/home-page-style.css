@@ -1,16 +1,19 @@
 :root{
     --bright_pink: #c98da3;
+    --dark_pink: #660033;
     --light: #f5e3e6;
+    --dark_green: #00520a;
 }
 
+.name {
+    background-color: var(--bright_pink);
+    height: clamp(40vh, 105vh, 115vh);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
 
 .name-container {
-    background-color: var(--bright_pink);
-    height: clamp(25vh, 35vh, 45vh);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
     text-align: right;
     text-transform: uppercase;
     padding-top: clamp(2rem, 5rem, 7rem);
@@ -23,7 +26,8 @@ p{
     margin: 0;
 }
 
-.corner {font-size: clamp(2vw, 10vw, 13rem);
+.corner {
+    font-size: clamp(2vw, 10vw, 13rem);
     font-weight: bold;
     color: var(--light);
 }
@@ -38,4 +42,110 @@ p{
     font-size: clamp(1vw, 3vw, 7vw);
     font-weight: 400;
     color: var(--light);
+}
+
+.whats-cornereng{
+    background-color: var(--light);
+    display: flex;
+    min-height: calc(100vh - var(--header-height));
+}
+
+.whats-cornereng-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.whats-cornereng-image img {
+    width: clamp(300px, 38vw,650px);
+    height: auto;
+    display: block;
+}
+
+.whats-cornereng-text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: clamp(2rem, 5vw, 7rem);
+    box-sizing: border-box;
+    color: var(--dark_pink);
+}
+
+.whats-cornereng-text-header {
+    margin: 0;
+    text-align: right;
+    font-size: clamp(2rem, 4vw, 5rem);
+    line-height: 1;
+}
+
+.whats-cornereng-text-body {
+    margin-top: clamp(2rem, 4vw, 4rem);
+    text-align: right;
+    font-size: clamp(1rem, 1.3vw, 1.5rem);
+    line-height: 1.5;
+}
+
+.about-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--dark_pink);
+    font-weight: bold;
+}
+
+.whats-to-find {
+    background-color: var(--dark_green);
+    min-height: calc(100vh - var(--header-height));
+    display: flex;
+    flex-direction: column;
+    padding: clamp(2rem, 4vw, 5rem);
+    box-sizing: border-box;
+}
+
+.whats-to-find-header {
+    color: var(--light);
+    display: flex;
+    box-sizing: border-box;
+}
+
+.whats-to-find-header h2 {
+    margin: 0;
+    text-align: left;
+    font-size: clamp(2rem, 4vw, 5rem);
+}
+
+.whats-to-find-grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: clamp(1rem, 2vw, 3rem);
+    align-items: center;
+}
+
+.whats-to-find-grid-card{
+    background-color: var(--light);
+    color: var(--dark_pink);
+    border-radius: 15px;
+
+    min-height: clamp(10rem, 20vw, 25rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.whats-to-find-grid-card h3 {
+    padding-left: clamp(5px, 10px, 15px);
+    display: flex;
+    justify-content: left;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: clamp(1rem, 1.77rem, 5rem);
+}
+
+.whats-to-find-grid-card p {
+    padding: clamp(5px, 10px, 15px);
+    font-size: clamp(0.8rem, 1.3rem, 1.5rem);
+    line-height: 1.5;
 }

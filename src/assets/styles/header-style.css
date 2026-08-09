@@ -5,6 +5,10 @@
 }
 
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+
   box-sizing: border-box;
   width: 100%;
   display: flex;
@@ -12,6 +16,7 @@
   justify-content: space-between;
   padding: clamp(0.8rem, 1.5vw, 1.25rem) clamp(1.5rem, 5vw, 5rem);
   background-color: var(--bright_pink);
+  height: var(--header-height);
 }
 
 .logo {
