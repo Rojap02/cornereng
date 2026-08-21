@@ -2,6 +2,9 @@
 
 :root{
   --header-height: 10vh;
+  --h2-size: clamp(2rem, 4rem, 5rem);
+  --h3-size: clamp(1rem, 1.7rem, 5rem);
+  --p-size: clamp(1rem, 1.3vw, 1.5rem);
 }
 
 html,

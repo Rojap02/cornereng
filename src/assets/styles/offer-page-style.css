@@ -1,3 +1,5 @@
+@import "global.css";
+
 :root {
     --light: #f5e3e6;
     --dark_pink: #660033;
@@ -5,8 +7,9 @@
 
 .offer {
     height: clamp(40vh, 105vh, 115vh);
-    padding-top: calc(var(--header-height) + 1vh);
+    padding-top: calc(var(--header-height));
     padding-left: clamp(2rem, 3rem, 4rem);
+    color: var(--light);
 }
 
 .offer-header {
@@ -15,10 +18,9 @@
 }
 
 .offer-header h2 {
-    margin-bottom: 2vh;
-    font-size: clamp(2rem, 4vw, 5rem);
+    margin-bottom: 5vh;
+    font-size: var(--h2-size);
     font-weight: bold;
-    text-transform: uppercase;
     color: var(--dark_pink);
 }
 
@@ -29,25 +31,17 @@
 
 .offer-list-item {
     color: var(--dark_pink);
+    margin-bottom: 20px;
 }
 
 .offer-list-item h3 {
-    font-size: clamp(1rem, 1.78rem, 5rem);
+    font-size: var(--h3-size);
     text-transform: uppercase;
     font-weight: bold;
-    margin: 2px;
+    margin: 0px;
+    margin: 10px 0px;
 }
 
-.more-info {
-    background-color: var(--dark_pink);
-    color: var(--light);
-    height: fit-content;
-    width: fit-content;
-    border-radius: 20px;
-}
-
-.more-info p {
-    margin: 10px;
-    padding: 10px;
-    text-transform: uppercase;
+.offer-list-item p{
+    font-size: var(--p-size);
 }

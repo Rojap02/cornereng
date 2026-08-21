@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import "@/assets/styles/home-page-style.css";
-import bigBenImage from "@/images/big-ben.png";
+import bigBenImage from "@/images/Adobe Express - file.png";
 </script>
 
 <template>
@@ -36,27 +36,27 @@ import bigBenImage from "@/images/big-ben.png";
 
     <div class="whats-to-find-grid">
       <div class="whats-to-find-grid-card">
-        <h3>indywidualne i grupowe zajęcia</h3>
+        <h3>indywidualne <br/>i grupowe zajęcia</h3>
 
-        <p>Lekcje dopasowane do Twojego poziomu i celu nauki, z indywidualnym podejściem.</p>
+        <p>lekcje dopasowane do Twojego poziomu i celu nauki, z indywidualnym podejściem.</p>
       </div>
 
       <div class="whats-to-find-grid-card">
-        <h3>artykuły i wskazówki</h3>
+        <h3>artykuły <br/>i wskazówki</h3>
 
-        <p>Praktyczne teksty o nauce angielskiego, psychologii uczenia się i skutecznych metodach zapamiętywania.</p>
+        <p>praktyczne teksty o nauce angielskiego, psychologii uczenia się i skutecznych metodach zapamiętywania.</p>
       </div>
 
       <div class="whats-to-find-grid-card">
         <h3>darmowe materiały</h3>
         
-        <p>Notatki, PDF-y, fiszki i ćwiczenia, które pomagają Ci uczyć się samodzielnie i utrwalać wiedzę z zjęć.</p>
+        <p>notatki, PDF-y, fiszki <br/>i ćwiczenia, które pomagają Ci uczyć się samodzielnie <br/>i utrwalać wiedzę z zjęć.</p>
       </div>
 
       <div class="whats-to-find-grid-card">
         <h3>sklep</h3>
 
-        <p>Starannie przygotowane materiały edukacyjne dla uczniów, maturzystów i nauczycieli.</p>
+        <p>starannie przygotowane materiały edukacyjne dla uczniów, maturzystów <br/>i nauczycieli.</p>
       </div>
     </div>
   </section>

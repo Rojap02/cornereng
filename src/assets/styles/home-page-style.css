@@ -1,3 +1,5 @@
+@import "global.css";
+
 :root{
     --bright_pink: #c98da3;
     --dark_pink: #660033;
@@ -39,9 +41,10 @@ p{
 }
 
 .subtitle {
-    font-size: clamp(1vw, 2vw, 7vw);
+    font-size: clamp(1vw, 1.8vw, 7vw);
     font-weight: 400;
     color: var(--light);
+    text-align: right;
 }
 
 .whats-cornereng{
@@ -61,6 +64,7 @@ p{
     width: clamp(300px, 38vw,650px);
     height: auto;
     display: block;
+    background-color: transparent;
 }
 
 .whats-cornereng-text {
@@ -80,14 +84,14 @@ p{
 
 .whats-cornereng-text-header {
     text-align: right;
-    font-size: clamp(2rem, 4vw, 5rem);
+    font-size: var(--h2-size);
     line-height: 1;
 }
 
 .whats-cornereng-text-body {
     margin: 0;
     text-align: right;
-    font-size: clamp(1rem, 1.3vw, 1.5rem);
+    font-size: var(--p-size);
     line-height: 1.5;
 }
 
@@ -119,9 +123,10 @@ p{
 }
 
 .whats-to-find-header h2 {
-    margin: 0;
+    margin-top: -10px;
+    margin-bottom: 38px;
     text-align: left;
-    font-size: clamp(2rem, 4vw, 5rem);
+    font-size: var(--h2-size);
 }
 
 .whats-to-find-grid {
@@ -145,16 +150,17 @@ p{
 }
 
 .whats-to-find-grid-card h3 {
-    padding-left: clamp(5px, 10px, 15px);
+    margin: 0;
+    padding: clamp(10px, 25px, 25px) clamp(15px, 21px, 35px);
     display: flex;
     justify-content: left;
     font-weight: bold;
     text-transform: uppercase;
-    font-size: clamp(1rem, 1.78rem, 5rem);
+    font-size: var(--h3-size);
 }
 
 .whats-to-find-grid-card p {
-    padding: clamp(5px, 10px, 15px);
-    font-size: clamp(0.8rem, 1.3rem, 1.5rem);
+    padding: clamp(10px, 25px, 25px) clamp(15px, 21px, 35px);
+    font-size: var(--p-size);
     line-height: 1.5;
 }

@@ -2,11 +2,11 @@ import { createRouter, createWebHistory } from "vue-router";
 
 import HomePage from "@/views/HomePage.vue";
 import AboutMePage from "@/views/AboutMePage.vue";
-import ArticlesPage from "@/views/ArticlesPage.vue";
 import FreeMaterialsPage from "@/views/FreeMaterialsPage.vue";
 import ShopPage from "@/views/ShopPage.vue";
 import MaturaPage from "@/views/MaturaPage.vue";
 import OfferPage from "@/views/OfferPage.vue";
+import SignUpPage from "@/views/SignUpPage.vue";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -22,9 +22,9 @@ const router = createRouter({
       component: AboutMePage,
     },
     {
-      path: "/artykuly",
-      name: "articles",
-      component: ArticlesPage,
+      path: "/zapisy",
+      name: "singup",
+      component: SignUpPage,
     },
     {
       path: "/darmowe-materialy",

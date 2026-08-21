@@ -26,11 +26,6 @@ import "@/assets/styles/header-style.css";
           <RouterLink class="navigation-link" to="/o-mnie">o mnie</RouterLink>
         </li>
         <li>
-          <RouterLink class="navigation-link" to="/artykuly"
-            >artykuły</RouterLink
-          >
-        </li>
-        <li>
           <RouterLink class="navigation-link" to="/darmowe-materialy"
             >darmowe materiały</RouterLink
           >
@@ -46,6 +41,11 @@ import "@/assets/styles/header-style.css";
         <li>
           <RouterLink class="navigation-link" to="/oferta"
             >oferta</RouterLink
+          >
+        </li>
+        <li>
+          <RouterLink class="navigation-link" to="/zapisy"
+            >zapisy</RouterLink
           >
         </li>
       </ul>
