@@ -41,6 +41,7 @@ p{
 }
 
 .subtitle {
+    font-family: "Just Breathe", sans-serif;
     font-size: clamp(1vw, 1.8vw, 7vw);
     font-weight: 400;
     color: var(--light);
