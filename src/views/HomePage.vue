@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import "@/assets/styles/home-page-style.css";
 import bigBenImage from "@/images/Adobe Express - file.png";
+import ReviewsSection from "@/components/Reviews.vue";
 </script>
 
 <template>
@@ -61,7 +62,6 @@ import bigBenImage from "@/images/Adobe Express - file.png";
     </div>
   </section>
 
-    
-  
+  <ReviewsSection />
 </template>
 

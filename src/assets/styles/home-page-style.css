@@ -4,12 +4,12 @@
     --bright_pink: #c98da3;
     --dark_pink: #660033;
     --light: #f5e3e6;
-    --dark_green: #00520a;
+    --light_green: #8d9b86;
 }
 
 .name {
     background-color: var(--bright_pink);
-    height: clamp(40vh, 105vh, 115vh);
+    height: 100vh;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -50,7 +50,7 @@ p{
 .whats-cornereng{
     background-color: var(--light);
     display: flex;
-    min-height: calc(100vh - var(--header-height));
+    min-height: calc(100vh - var(--header_height));
 }
 
 .whats-cornereng-image {
@@ -84,14 +84,14 @@ p{
 
 .whats-cornereng-text-header {
     text-align: right;
-    font-size: var(--h2-size);
+    font-size: var(--h2_size);
     line-height: 1;
 }
 
 .whats-cornereng-text-body {
     margin: 0;
     text-align: right;
-    font-size: var(--p-size);
+    font-size: var(--p_size);
     line-height: 1.5;
 }
 
@@ -108,8 +108,8 @@ p{
 }
 
 .whats-to-find {
-    background-color: var(--dark_green);
-    min-height: calc(100vh - var(--header-height));
+    background-color: var(--light_green);
+    min-height: calc(100vh - var(--header_height));
     display: flex;
     flex-direction: column;
     padding: clamp(2rem, 4vw, 5rem);
@@ -126,7 +126,7 @@ p{
     margin-top: -10px;
     margin-bottom: 38px;
     text-align: left;
-    font-size: var(--h2-size);
+    font-size: var(--h2_size);
 }
 
 .whats-to-find-grid {
@@ -156,11 +156,11 @@ p{
     justify-content: left;
     font-weight: bold;
     text-transform: uppercase;
-    font-size: var(--h3-size);
+    font-size: var(--h3_size);
 }
 
 .whats-to-find-grid-card p {
     padding: clamp(10px, 25px, 25px) clamp(15px, 21px, 35px);
-    font-size: var(--p-size);
+    font-size: var(--p_size);
     line-height: 1.5;
 }
