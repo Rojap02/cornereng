@@ -1,0 +1,26 @@
+:root{
+    --light: #f5e3e6;
+}
+
+.privacy-policy {
+    background-color: var(--light);
+    color: black;
+    min-height: 100vh;
+    padding: 50px;
+    font-family: "Poppins", sans-serif;
+}
+
+.privacy-policy-container {
+    display: block;
+    width: 100%;
+}
+
+.privacy-policy-container h1,
+.privacy-policy-container h2,
+.privacy-policy-container p,
+.privacy-policy-container li,
+.privacy-policy-container a {
+    color: black !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}

@@ -1,9 +1,16 @@
 <script setup lang="ts">
 import Header from "@/components/Header.vue";
+import Footer from "@/components/Footer.vue";
 </script>
 
 <template>
-  <Header />
+  <div class="app">
+    <Header />
 
-  <RouterView />
+    <main class="page-content">
+      <RouterView />
+    </main>
+
+    <Footer />
+  </div>
 </template>

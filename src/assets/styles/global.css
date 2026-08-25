@@ -1,15 +1,41 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
 :root{
-  --header-height: 10vh;
-  --h2-size: clamp(2rem, 4rem, 5rem);
-  --h3-size: clamp(1rem, 1.7rem, 5rem);
-  --p-size: clamp(1rem, 1.3vw, 1.5rem);
+  --header_height: 10vh;
+  --h2_size: clamp(2rem, 4rem, 5rem);
+  --h3_size: clamp(1rem, 1.7rem, 5rem);
+  --p_size: clamp(1rem, 1.3vw, 1.5rem);
 }
 
 html,
 body,
 #app {
+  min-height: 100%;
   margin: 0;
   font-family: "Poppins", sans-serif;
+}
+
+#app {
+    min-height: 100vh;
+}
+
+.app {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.page-content {
+    flex: 1;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.footer {
+    flex-shrink: 0;
 }

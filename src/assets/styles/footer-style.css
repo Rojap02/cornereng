@@ -1,0 +1,130 @@
+@import "global.css";
+
+:root {
+    --bright_pink: #c98da3;
+    --dark_pink: #660033;
+    --light: #f5e3e6;
+}
+
+.footer {
+    background-color: var(--bright_pink);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-header h2 {
+    padding: clamp(2rem, 4vw, 5rem);
+    color: var(--light);
+    font-size: calc(var(--h2_size) + 1rem);
+    margin: 0;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    padding-right: 8vw;
+    justify-content: center;
+    gap: 10px;
+}
+
+.mail {
+    background-color: var(--dark_pink);
+    min-height: 6vh;
+    min-width: 37vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.mail a {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: var(--light);
+    font-size: var(--p_size);
+    line-height: 1;
+    box-sizing: border-box;
+}
+
+.mail a i {
+    padding: 0 1.5vw;
+}
+
+.instagram {
+    background-color: var(--dark_pink);
+    min-height: 6vh;
+    min-width: 37vw;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.instagram a {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: var(--light);
+    font-size: var(--p_size);
+    line-height: 1;
+    box-sizing: border-box;
+}
+
+.instagram a i {
+    padding: 0 1.5vw;
+}
+
+.statute {
+    background-color: var(--dark_pink);
+    min-height: 6vh;
+    min-width: 37vw;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.statute a {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: var(--light);
+    font-size: var(--p_size);
+    line-height: 1;
+    box-sizing: border-box;
+}
+
+.statute a i {
+    padding: 0 1.5vw;
+}
+
+.privacy {
+    background-color: var(--dark_pink);
+    min-height: 6vh;
+    min-width: 37vw;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;   
+}
+
+.privacy a {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: var(--light);
+    font-size: var(--p_size);
+    line-height: 1;
+    box-sizing: border-box;
+}
+
+.privacy a i {
+    padding: 0 1.5vw;
+}

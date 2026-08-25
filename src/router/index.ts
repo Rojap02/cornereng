@@ -7,6 +7,7 @@ import ShopPage from "@/views/ShopPage.vue";
 import MaturaPage from "@/views/MaturaPage.vue";
 import OfferPage from "@/views/OfferPage.vue";
 import SignUpPage from "@/views/SignUpPage.vue";
+import PrivacyPolicyPage from "@/views/PrivacyPolicyPage.vue";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -46,7 +47,19 @@ const router = createRouter({
       name: "offer",
       component: OfferPage,
     },
+    {
+      path: "/polityka-prywatnosci",
+      name: "policy",
+      component: PrivacyPolicyPage,
+    },
   ],
+
+  scrollBehavior() {
+    return {
+      top: 0,
+      left: 0,
+    };
+  },
 });
 
 export default router;
