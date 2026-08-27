@@ -5,13 +5,7 @@ import ReviewsSection from "@/components/Reviews.vue";
 </script>
 
 <template>
-  <section class="name">
-    <div class="name-container">
-        <p class="corner">corner</p>
-        <p class="eng">.eng</p>
-        <p class="subtitle">by martyna narożnik</p>
-    </div>
-  </section>
+  
 
   <section class="whats-cornereng">
     <div class="whats-cornereng-image">
