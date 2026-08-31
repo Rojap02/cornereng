@@ -1,0 +1,26 @@
+:root{
+    --light: #f5e3e6;
+}
+
+.statute-full{
+    background-color: var(--light);
+    color: black;
+    min-height: 100vh;
+    padding: 50px;
+    font-family: "Poppins", sans-serif;
+}
+
+.statute-container {
+    display: block;
+    width: 100%;
+}
+
+.statute-container h1,
+.statute-container h2,
+.statute-container p,
+.statute-container li,
+.statute-container a {
+    color: black !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}

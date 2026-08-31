@@ -27,14 +27,9 @@ import "@/assets/styles/footer-style.css"
             </div>
 
             <div class="statute">
-                <a href="/regulamin" 
-                class="footer-link"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Regulamin zajęć"
-                >
+                <RouterLink to="/regulamin" class="footer-link" aria-label="Regulamin zajęć" >
                     <i class="fa-solid fa-file-contract"></i>regulamin zajęć
-                </a>
+                </RouterLink>
             </div>
 
             <div class="privacy">

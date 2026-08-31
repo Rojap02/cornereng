@@ -7,6 +7,7 @@ import ShopPage from "@/views/ShopPage.vue";
 import MaturaPage from "@/views/MaturaPage.vue";
 import OfferPage from "@/views/OfferPage.vue";
 import SignUpPage from "@/views/SignUpPage.vue";
+import Statute from "@/views/Statute.vue";
 import PrivacyPolicyPage from "@/views/PrivacyPolicyPage.vue";
 
 const router = createRouter({
@@ -46,6 +47,11 @@ const router = createRouter({
       path: "/oferta",
       name: "offer",
       component: OfferPage,
+    },
+    {
+      path: "/regulamin",
+      name: "statute",
+      component: Statute,
     },
     {
       path: "/polityka-prywatnosci",
