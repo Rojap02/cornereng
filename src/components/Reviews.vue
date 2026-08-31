@@ -1,51 +1,42 @@
 <script setup lang="ts">
 import "@/assets/styles/reviews-style.css";
 
-import { ref } from "vue";
+import { ref, onMounted } from "vue";
+import { getReviews } from "@/services/reviewsService";
+
+interface Review {
+    id: number;
+    author: string;
+    content: string;
+}
+
+const reviews = ref<Review[]>([]);
 
 const reviewsContainer = ref<HTMLElement | null>(null);
 
-const reviews = [
-    {
-        id: 1,
-        author: "Janek",
-        content: "Bardzo polecam zajęcia z Martyną!"
-    },
-
-    {
-        id: 2,
-        author: "Kasia",
-        content: "Pierwszy raz naprawdę zaczęłam rozumieć gramatykę."
-    },
-
-    {
-        id: 3,
-        author: "Michał",
-        content: "Super zajęcia! Gorąco polecam, wszystko tłumaczone bez pośpiechu i z wyczuciem."
-    },
-
-    {
-        id: 4,
-        author: "Szymon",
-        content: "Kocham miśkę <3 !!!"
+onMounted(async () => {
+    try {
+        reviews.value = await getReviews();
+    } catch (error) {
+        console.error("Błąd podczas pobierania opinii:", error);
     }
-];
+});
 
 const scrollReviews = (direction: "left" | "right") => {
-    if (!reviewsContainer.value) return;
+    if(!reviewsContainer.value) return;
 
     const card = reviewsContainer.value.querySelector(
         ".review-card"
     ) as HTMLElement | null;
 
-    if (!card) return;
+    if(!card) return;
 
     const gap = 40;
     const scrollAmount = card.offsetWidth + gap;
 
     reviewsContainer.value.scrollBy({
         left: direction === "right" ? scrollAmount : -scrollAmount,
-        behavior: "smooth"
+        behavior: "smooth",
     });
 };
 </script>
@@ -91,9 +82,11 @@ const scrollReviews = (direction: "left" | "right") => {
                     :key="review.id"
                     class="review-card"
                 >
-                    <p class="review-content">
-                        {{ review.content }}
-                    </p>
+                    <div class="review-content-scroll">
+                        <p class="review-content">
+                            "{{ review.content }}"
+                        </p>
+                    </div>
 
                     <p class="review-author">
                         {{ review.author }}

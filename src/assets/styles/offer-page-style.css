@@ -6,9 +6,8 @@
 }
 
 .offer {
-    height: clamp(40vh, 105vh, 115vh);
-    padding-top: calc(var(--header-height));
     padding-left: clamp(2rem, 3rem, 4rem);
+    padding-bottom: clamp(2rem, 3rem, 4rem);
     color: var(--light);
 }
 
@@ -19,7 +18,7 @@
 
 .offer-header h2 {
     margin-bottom: 5vh;
-    font-size: var(--h2-size);
+    font-size: var(--h2_size);
     font-weight: bold;
     color: var(--dark_pink);
 }
@@ -35,7 +34,7 @@
 }
 
 .offer-list-item h3 {
-    font-size: var(--h3-size);
+    font-size: var(--h3_size);
     text-transform: uppercase;
     font-weight: bold;
     margin: 0px;
@@ -43,5 +42,5 @@
 }
 
 .offer-list-item p{
-    font-size: var(--p-size);
+    font-size: var(--p_size);
 }

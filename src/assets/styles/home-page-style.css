@@ -123,12 +123,13 @@ p{
 .whats-to-find {
     margin: 5vh;
     border-radius: 15px;
-    background-color: var(--light_green);
+    background-color: var(--bright_pink);
     min-height: calc(100vh - var(--header_height));
     display: flex;
     flex-direction: column;
     padding: clamp(2rem, 4vw, 5rem);
     box-sizing: border-box;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .whats-to-find-header {
@@ -142,8 +143,6 @@ p{
     margin-bottom: 38px;
     text-align: left;
     font-size: var(--h2_size);
-
-    text-shadow: 0 0 8px rgba(82, 82, 82, 0.5);  
 }
 
 .whats-to-find-grid {
@@ -164,6 +163,8 @@ p{
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
+    
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .whats-to-find-grid-card h3 {
