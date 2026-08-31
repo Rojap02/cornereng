@@ -58,7 +58,6 @@ p{
 
 .whats-cornereng{
     margin: 0 5vh;
-    margin-top: 1vh;
     border-radius: 15px;
     background-color: var(--light);
     display: flex;

@@ -9,6 +9,7 @@
 
 .reviews {
     margin: 5vh;
+    margin-bottom: 0;
     border-radius: 15px;
     background-color: var(--light_green);
     min-height: calc(100vh - var(--header_height));
