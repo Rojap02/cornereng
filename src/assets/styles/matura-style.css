@@ -1,0 +1,30 @@
+@import "global.css";
+
+:root {
+    --bright_pink: #c98da3;
+    --dark_pink: #660033;
+    --light: #eee7dd;
+    --light_green: #8d9b86;
+    --beige: #8c847f;
+}
+
+.matura {
+    background-color: var(--beige);
+    margin: 0 5vh;
+    border-radius: 15px;
+    padding: clamp(2rem, 4vw, 5rem);
+}
+
+.matura h2 {
+    margin: 0;
+    font-size: var(--h2_size);
+    color: var(--light);
+}
+
+.matura p{
+    margin: 5vh 0;
+    color: var(--light);
+    font-size: var(--p_size);
+    line-height: 1.5;
+    text-align: justify;
+}

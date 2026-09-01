@@ -8,17 +8,13 @@ import ReviewsSection from "@/components/Reviews.vue";
   
 
   <section class="whats-cornereng">
-    <div class="whats-cornereng-image">
-      <img :src="bigBenImage" alt="big ben" />
-    </div>
-
     <div class="whats-cornereng-text">
       <div class="whats-cornereng-text-header">
-        <h2>czym jest corner.eng?</h2>
+        <h2>czym jest<br>corner.eng?</h2>
       </div>
 
       <div class="whats-cornereng-text-body">
-        <p>corner.eng powstało z przekonania, że nauka języka nie musi być stresująca ani oparta na bezmyślnym zapamiętywaniu.</p>
+        <p>corner.eng powstało z przekonania, że nauka języka<br>nie musi być stresująca ani oparta na bezmyślnym zapamiętywaniu.</p>
         <p><br />więcej dowiesz się w zakładce <RouterLink to="/o-mnie" class="about-link">O MNIE</RouterLink> i <RouterLink to="/oferta" class="about-link">OFERTA</RouterLink>.</p>
       </div>
     </div>

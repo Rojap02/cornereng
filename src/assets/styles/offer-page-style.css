@@ -1,14 +1,13 @@
 @import "global.css";
 
 :root {
-    --light: #f5e3e6;
+    --light: #eee7dd;
     --dark_pink: #660033;
     --light_green: #8d9b86;
+    --beige: #8c847f;
 }
 
 .offer {
-    padding-left: clamp(2rem, 3rem, 4rem);
-    padding-bottom: clamp(2rem, 3rem, 4rem);
     background-color: var(--light_green);
     margin: 0 5vh;
     padding: clamp(2rem, 4vw, 5rem);
@@ -31,6 +30,7 @@
 .offer-list {
     display: flex;
     flex-direction: column;
+    margin-top: 5vh;
 }
 
 .offer-list-item {
@@ -46,10 +46,103 @@
     margin: 0;
     margin-bottom: 2vh;
     font-size: var(--h3_size);
-    text-transform: uppercase;
     font-weight: bold;
 }
 
 .offer-list-item p{
     font-size: var(--p_size);
+}
+
+.individual {
+    background-color: var(--bright_pink);
+    margin: 5vh;
+    padding: clamp(2rem, 4vw, 5rem);
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.individual-header {
+    display: flex;
+    align-items: center;
+}
+
+.individual-header h2 {
+    margin: 0;
+    font-size: var(--h2_size);
+    font-weight: bold;
+    color: var(--light);
+}
+
+.individual-body {
+    margin-top: 5vh;
+}
+
+.individual p{
+    font-size: var(--p_size);
+    color: var(--light);
+}
+
+.individual-price {
+    font-weight: bold;
+}
+
+.group {
+    background-color: var(--beige);
+    margin: 5vh;
+    padding: clamp(2rem, 4vw, 5rem);
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.group-body {
+    margin-top: 5vh;
+}
+
+.group h2 {
+    margin: 0;
+    font-size: var(--h2_size);
+    font-weight: bold;
+    color: var(--light);
+}
+
+.group p{
+    font-size: var(--p_size);
+    color: var(--light);
+}
+
+.individual p.asterix,
+.group p.asterix {
+    color: var(--light);
+    font-size: calc(var(--p_size) - 0.25rem);
+}
+
+.price-table {
+    width: 100%;
+    max-width: 800px;
+    border-collapse: collapse;
+    color: var(--light);
+}
+
+.price-table th,
+.price-table td {
+    border: 3px solid var(--light);
+    padding: 20px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: var(--p_size);
+}
+
+.price-table th {
+    font-weight: bold;
+}
+
+.price-table td span {
+    font-size: 0.9em;
+}
+
+.price-table-wrapper {
+    display: flex;
+    margin-top: 5vh;
+    width: 100%;
+    overflow-x: auto;
 }

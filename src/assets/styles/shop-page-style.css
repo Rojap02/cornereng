@@ -1,0 +1,29 @@
+@import "global.css";
+
+:root {
+    --bright_pink: #c98da3;
+    --dark_pink: #660033;
+    --light: #eee7dd;
+    --light_green: #8d9b86;
+}
+
+.shop {
+    background-color: var(--bright_pink);
+    margin: 0 5vh;
+    border-radius: 15px;
+    padding: clamp(2rem, 4vw, 5rem);
+}
+
+.shop h2 {
+    margin: 0;
+    font-size: var(--h2_size);
+    color: var(--light);
+}
+
+.shop p {
+    margin: 5vh 0;
+    color: var(--light);
+    font-size: var(--p_size);
+    line-height: 1.5;
+    text-align: justify;
+}

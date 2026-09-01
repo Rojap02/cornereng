@@ -9,7 +9,9 @@
     </div>
 
     <div class="sign-up-text">
-      <p>przed zapisaniem się na zajęcia, zachęcam do zapoznania się z <RouterLink to="/regulamin">regulaminem.</RouterLink><br>jeżeli podczas wypełniania formularza pojawią się pytania, bądź niejasności, proszę o kontakt mailowy</p>
+      <p>wypłnij formularz zgłoszeniowy, a ja odezwę się z propozycją bezpłątnej konsultacji lub rozpoczęcia współpracy!
+      <br>przed zapisem sprawdź moją <RouterLink class="sign-up-link" to="/oferta">ofertę</RouterLink>, <RouterLink class="sign-up-link" to="/regulamin">regulamin</RouterLink> oraz <RouterLink class="sign-up-link" to="/polityka-prywatnosci">politykę prywatności</RouterLink>.
+    </p>
     </div>
 
     <div class="sign-up-button">

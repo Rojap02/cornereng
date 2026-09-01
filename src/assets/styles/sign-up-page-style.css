@@ -3,7 +3,7 @@
 :root {
     --bright_pink: #c98da3;
     --dark_pink: #660033;
-    --light: #f5e3e6;
+    --light: #eee7dd;
     --light_green: #8d9b86;
 }
 
@@ -37,28 +37,53 @@
 }
 
 .sign-up-button {
-    display: flex;
-    justify-content: center;
-}
-
-.btn {
     width: 60%;
     height: 7vh;
-    margin-top: 10vh;
+    margin: 10vh auto 0;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
     background-color: var(--dark_pink);
+    border-radius: 15px;
+}
+
+.btn {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     color: var(--light);
     font-size: var(--p_size);
     font-weight: bold;
-    border: none;
-    border-radius: 15px;
-    cursor: pointer;
+    text-decoration: none;
+
+    transition: opacity 0.2s ease;
+}
+
+.btn:hover {
+    opacity: 0.65;
 }
 
 .sign-up-button a {
     text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.sign-up-button a:hover {
+    opacity: 0.65;
+}
+
+.sign-up-link {
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: opacity 0.2s ease;
+}
+
+.sign-up-link:hover {
+    opacity: 0.65;
 }

@@ -3,7 +3,7 @@
 :root{
     --bright_pink: #c98da3;
     --dark_pink: #660033;
-    --light: #f5e3e6;
+    --light: #eee7dd;
     --light_green: #8d9b86;
 }
 
@@ -80,7 +80,7 @@ p{
 }
 
 .whats-cornereng-text {
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;

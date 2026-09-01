@@ -3,7 +3,7 @@
 :root{
     --bright_pink: #c98da3;
     --dark_pink: #660033;
-    --light: #f5e3e6;
+    --light: #eee7dd;
     --light_green: #8d9b86;
 }
 
@@ -29,6 +29,7 @@
     color: var(--light);
     font-size: var(--p_size);
     line-height: 1.5;
+    text-align: justify;
 }
 
 .lessons {
@@ -54,6 +55,7 @@
     color: var(--light);
     font-size: var(--p_size);
     line-height: 1.5;
+    text-align: justify;
 }
 
 .private {
@@ -79,6 +81,7 @@
     color: var(--light);
     font-size: var(--p_size);
     line-height: 1.5;
+    text-align: justify;
 }
 
 .private-instagram {
