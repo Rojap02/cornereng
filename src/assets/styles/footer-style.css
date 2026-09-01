@@ -53,6 +53,11 @@
     font-size: var(--p_size);
     line-height: 1;
     box-sizing: border-box;
+    transition: opacity 0.2s ease;
+}
+
+.mail a:hover {
+    opacity: 0.65;
 }
 
 .mail a i {
@@ -78,6 +83,11 @@
     font-size: var(--p_size);
     line-height: 1;
     box-sizing: border-box;
+    transition: opacity 0.2s ease;
+}
+
+.instagram a:hover {
+    opacity: 0.65;
 }
 
 .instagram a i {
@@ -103,6 +113,11 @@
     font-size: var(--p_size);
     line-height: 1;
     box-sizing: border-box;
+    transition: opacity 0.2s ease;
+}
+
+.statute a:hover {
+    opacity: 0.65;
 }
 
 .statute a i {
@@ -128,6 +143,11 @@
     font-size: var(--p_size);
     line-height: 1;
     box-sizing: border-box;
+    transition: opacity 0.2s ease;
+}
+
+.privacy a:hover {
+    opacity: 0.65;
 }
 
 .privacy a i {

@@ -1,0 +1,93 @@
+@import "global.css";
+
+:root{
+    --bright_pink: #c98da3;
+    --dark_pink: #660033;
+    --light: #f5e3e6;
+    --light_green: #8d9b86;
+}
+
+.hello {
+    background-color: var(--dark_pink);
+    margin: 0 5vh;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: clamp(2rem, 4vw, 5rem);
+    min-height: auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.hello h2 {
+    margin: 0;
+    font-size: var(--h2_size);
+    color: var(--light);
+}
+
+.hello p {
+    margin: 5vh 0;
+    color: var(--light);
+    font-size: var(--p_size);
+    line-height: 1.5;
+}
+
+.lessons {
+    background-color: var(--bright_pink);
+    margin: 5vh;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: clamp(2rem, 4vw, 5rem);
+    min-height: auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.lessons h2 {
+    margin: 0;
+    font-size: var(--h2_size);
+    color: var(--light);
+    line-height: 1.1;
+}
+
+.lessons p {
+    margin: 5vh 0;
+    color: var(--light);
+    font-size: var(--p_size);
+    line-height: 1.5;
+}
+
+.private {
+    background-color: var(--light_green);
+    margin: 5vh;
+    margin-bottom: 0;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: clamp(2rem, 4vw, 5rem);
+    min-height: auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.private h2 {
+    margin: 0;
+    font-size: var(--h2_size);
+    color: var(--light);
+}
+
+.private p {
+    margin: 5vh 0;
+    color: var(--light);
+    font-size: var(--p_size);
+    line-height: 1.5;
+}
+
+.private-instagram {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--light);
+    transition: opacity 0.2s ease;
+}
+
+.private-instagram:hover {
+    opacity: 0.65;
+}
